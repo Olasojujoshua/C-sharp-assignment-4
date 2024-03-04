@@ -1,0 +1,28 @@
+﻿using System;
+
+public class Program
+{
+    public static void Main(string[]args)
+    {
+        int[] numbers = new int[3];
+        
+        Console.WriteLine("Enter the first number:");
+        numbers[0] = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the second number:");
+        numbers[1] = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("Enter the third number:");
+        numbers[2] = Convert.ToInt32(Console.ReadLine());
+        
+        Array.Sort(numbers);
+        
+        Console.WriteLine("The numbers in ascending order are:");
+        
+        foreach(int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
+
